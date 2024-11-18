@@ -3,7 +3,7 @@ displaying activity as in Github
 
 ![image](https://github.com/user-attachments/assets/4bc262b9-fb80-417d-a495-6e7279c609e4)
 
-to display it, you need to add a block to the page
+to display it, you need to add a block dataviewjs to the page
 ```dataviewjs
 const pages = dv.pages('"/"'); // Все заметки
 const today = dv.luxon.DateTime.now(); // Текущая дата
