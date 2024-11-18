@@ -1,7 +1,8 @@
 # obsidian-dataview-activity
 displaying activity as in Github
 
-![image](https://github.com/user-attachments/assets/4bc262b9-fb80-417d-a495-6e7279c609e4)
+![image](https://github.com/user-attachments/assets/f48d6237-04ec-4ef5-8b6d-45b412b982fe)
+
 
 First you need to install the [Dataview](https://github.com/blacksmithgu/obsidian-dataview) plugin, if it is not already installed
 
