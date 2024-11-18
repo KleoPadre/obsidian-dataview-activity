@@ -3,7 +3,9 @@ displaying activity as in Github
 
 ![image](https://github.com/user-attachments/assets/4bc262b9-fb80-417d-a495-6e7279c609e4)
 
-to display it, you need to add a block dataviewjs to the page
+First you need to install the [Dataview](https://github.com/blacksmithgu/obsidian-dataview) plugin, if it is not already installed
+
+To display it, you need to add a block dataviewjs to the page
 ```javascript
 const pages = dv.pages('"/"'); // All notes
 const today = dv.luxon.DateTime.now(); // Current date
