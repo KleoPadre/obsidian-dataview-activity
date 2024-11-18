@@ -41,12 +41,12 @@ const yearTitle = `${startYear} - ${endYear}`; // Заголовок годов
 let outputHTML = `<div style="text-align:left;">`; // Устанавливаем выравнивание календаря по левому краю
 outputHTML += `<h2 style="margin-bottom:10px;font-size:large;">${yearTitle}</h2>`; // Заголовок года
 
-const dayNames = ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вс"];
+const dayNames = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
 // Дни недели и дни
 dayNames.forEach((day, rowIndex) => {
     outputHTML += `<div style="display:flex;align-items:center;margin-bottom:2px;">`;
-    outputHTML += `<span style="width:20px;text-align:right;margin-right:5px;font-size:small;font-weight:bold;line-height:${daySize}px;">${day}</span>`;
+    outputHTML += `<span style="width:30px;text-align:right;margin-right:5px;font-size:small;font-weight:bold;line-height:${daySize}px;">${day}</span>`;
     calendar[rowIndex].forEach(cell => {
         outputHTML += cell || `<span style="width:${daySize}px;height:${daySize}px;border-radius:2px;background-color:${emptyColor};display:inline-block;margin:0.5px;vertical-align:middle;"></span>`;
     });
@@ -55,11 +55,11 @@ dayNames.forEach((day, rowIndex) => {
 
 // Добавляем легенду
 outputHTML += `<div style="margin-top:10px;display:flex;align-items:center;">`;
-outputHTML += `<span style="font-size:small;margin-right:10px;">Меньше</span>`;
+outputHTML += `<span style="font-size:small;margin-right:10px;">Less</span>`;
 gradientColors.forEach(color => {
     outputHTML += `<span style="width:${daySize}px;height:${daySize}px;border-radius:2px;background-color:${color};display:inline-block;margin:0.5px;"></span>`;
 });
-outputHTML += `<span style="font-size:small;margin-left:10px;">Больше</span>`;
+outputHTML += `<span style="font-size:small;margin-left:10px;">More</span>`;
 outputHTML += `</div>`;
 
 // Выводим итоговый HTML
